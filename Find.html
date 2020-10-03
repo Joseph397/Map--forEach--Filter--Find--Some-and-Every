@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+  </head>
+  <body>
+    <script>
+      const videos = [
+        "Pranking my sister, is she ok (gone wrong)",
+        "how to javascript",
+        "html tutorial",
+        "learning the piano",
+        "html basics",
+      ];
+
+      // Find 
+      // checks for condition ,if true , only return 1 item
+      const searchTutorial = videos.find(function (video) {
+        return video.includes("html"); // html tutorial, stops after first instance
+      });
+
+      console.log(searchTutorial);
+    </script>
+  </body>
+</html>

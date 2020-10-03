@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <script>
+      const videos = [
+        "Pranking my sister, is she ok (gone wrong)",
+        "how to javascript",
+        "html tutorial",
+        "learning the piano",
+        "html basics",
+        "css",
+        "java",
+        "programing",
+        "ui/ux",
+      ];
+
+      const games = [
+        { title: "Mass Effect", rating: 9.5 },
+        { title: "League of Legends", rating: 5 },
+        { title: "Last of Us", rating: 10 },
+        { title: "God of war", rating: 10 },
+        { title: "WWE 2k20", rating: 4 },
+      ];
+
+      // Filter
+      // like find but can get multiple values
+      // const shortSearch = videos.filter(function (video) {
+      //   return video.length < 10;
+      // });
+
+      // Arrowj
+
+      console.log(shortSearch);
+
+      const highRating = games.filter(function(game){ // game gives access to each game
+        return game.rating > 9;
+      });
+
+      console.log(highRating);
+    </script>
+  </body>
+</html>

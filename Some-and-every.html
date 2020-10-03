@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some And Every
+    </title>
+  </head>
+  <body>
+    <script>
+      const videos = [
+        "Pranking my sister, is she ok (gone wrong)",
+        "how to javascript",
+        "html tutorial",
+        "learning the piano",
+        "html basics",
+        "css",
+        "java",
+        "programing",
+        "ui/ux",
+      ];
+
+      const games = [
+        { title: "Mass Effect", rating: 9.5 },
+        { title: "League of Legends", rating: 5 },
+        { title: "Last of Us", rating: 10 },
+        { title: "God of war", rating: 10 },
+        { title: "WWE 2k20", rating: 4 }
+      ];
+
+     // Some and Every - returns either true or false value
+
+     const checkRating = games.every(function(game){ // false- all have to be bigger than 8
+         return game.rating > 8;
+     });
+
+     const someRating = games.some(function(game){ // true - one is larger than 8
+      return game.rating > 8;
+     });
+
+     console.log(checkRating);
+
+     console.log(someRating);
+
+    </script>
+  </body>
+</html>

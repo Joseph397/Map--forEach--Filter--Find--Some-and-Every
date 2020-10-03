@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <script>
+      const videos = [
+        "Pranking my sister, is she ok (gone wrong)",
+        "how to javascript",
+        "html tutorial",
+        "learning the piano",
+      ];
+
+      // Map -can return and save a value
+      // good for modifying an array
+      // with map we can return a new value and save it to a variable
+      // its always going to try to return a value and add it to variable , otherwise returns undefined
+      // Dosent affect the original
+
+      // const newVideos = videos.map(function(video) {  // sets the value of newVideos to videos.map( goes through each video)
+      // return video.toUpperCase();// Returns each video in uppercase
+
+      // Arrow function - same as above
+      const newVideos = videos.map((video) => {
+        return video; // map needs to have a return
+      });
+
+      newVideos.push("Heyyyy");
+      console.log(videos);
+      console.log(newVideos);
+
+    </script>
+  </body>
+</html>
